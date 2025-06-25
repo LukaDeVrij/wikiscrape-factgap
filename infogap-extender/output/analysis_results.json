@@ -1,98 +1,932 @@
-{
-  "en_file": "en_Denys_Shmyhal.txt",
-  "ru_file": "ru_Шмыгаль,_Денис_Анатольевич.txt",
-  "en_to_ru": [
-    {
-      "en_fact": "Denys Anatoliiovych Shmyhal was born in 1975.",
-      "result": "yes",
-      "sentiment": "neutral",
-      "explanation": "The fact of a person's birthdate does not inherently carry a positive or negative sentiment; it simply describes a biographical detail and is a neutral statement."
-    },
-    {
-      "en_fact": "He is a Ukrainian politician.",
-      "result": "yes",
-      "sentiment": "neutral",
-      "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply describes his political affiliation, which is a characteristic of his role and doesn't automatically carry a judgment."
-    },
-    {
-      "en_fact": "He served as the 18th and current prime minister of Ukraine.",
-      "result": "yes",
-      "sentiment": "neutral",
-      "explanation": "The fact of him serving as the current prime minister simply describes his role in government, lacking any inherent positive or negative evaluation."
-    },
-    {
-      "en_fact": "He was the governor of Ivano-Frankivsk Oblast before his appointment as prime minister.",
-      "result": "yes",
-      "sentiment": "neutral",
-      "explanation": "The fact alone doesn't convey a positive or negative sentiment; it simply establishes a historical position held by the individual, which can be viewed as neutral in itself."
-    },
-    {
-      "en_fact": "He was acting vice prime minister in the Honcharuk Government.",
-      "result": "no",
-      "sentiment": "neutral",
-      "explanation": "The fact alone does not inherently carry a positive or negative sentiment; it simply describes his role within the government, which could be interpreted in various ways depending on context."
-    },
-    {
-      "en_fact": "As Prime Minister, he has been in charge of the response to the COVID-19 pandemic in Ukraine.",
-      "result": "yes",
-      "sentiment": "neutral",
-      "explanation": "The fact itself describes a specific role and responsibility, but it doesn't inherently express a positive or negative sentiment towards the Prime Minister; it simply presents a historical occurrence."
-    },
-    {
-      "en_fact": "He has been in charge of conducting the defense of Ukraine during the 2022 Russian invasion.",
-      "result": "yes",
-      "sentiment": "positive",
-      "explanation": "The fact of him leading the defense of Ukraine suggests a positive assessment of his leadership and effectiveness in protecting the nation."
-    },
-    {
-      "en_fact": "He is the longest serving prime minister in Ukrainian history as of 2025.",
-      "result": "yes",
-      "sentiment": "positive",
-      "explanation": "The fact of being the longest-serving prime minister suggests a high level of stability, experience, and leadership, potentially portraying him as a successful and influential figure, although it doesn't inherently imply a negative sentiment."
-    }
-  ],
-  "ru_to_en": [
-    {
-      "ru_fact": "Дени́с Анатолійович Шмыга́ль (15 октября 1975, Львов, Украинская ССР, СССР)",
-      "result": "да",
-      "sentiment": "neg",
-      "explanation": "Хотя факт упоминания Дениса Анатолійовича Шмыгальского в английском контексте может быть связан с каким-то негативным аспектом его прошлого, он в первую очередь представляет собой факт, и он не выражает никаких положительных или отрицательных эмоций в отношении него."
-    },
-    {
-      "ru_fact": "Он украинский государственный и политический деятель.",
-      "result": "да",
-      "sentiment": "neg",
-      "explanation": "Поскольку он украинский государственный и политический деятель, этот факт сам по себе не выражает позитивного или негативного отношения к нему, а лишь констатирует его принадлежность к данной стране."
-    },
-    {
-      "ru_fact": "Он инженер-экономист.",
-      "result": "да",
-      "sentiment": "neutral",
-      "explanation": "Этот факт сам по себе описывает человека, не выражая никаких положительных или отрицательных эмоций или отношений к нему."
-    },
-    {
-      "ru_fact": "Он премьер-министр Украины с 4 марта 2020 года.",
-      "result": "да",
-      "sentiment": "neg",
-      "explanation": "Название премьер-министра Украины указывает на то, что это человек является политически значимой фигурой, потенциально представляющей вызовы и трудности, а не является позитивным явлением."
-    },
-    {
-      "ru_fact": "Он кандидат экономических наук (2003).",
-      "result": "да",
-      "sentiment": "neutral",
-      "explanation": "Этот факт просто констатирует факт о кандидате, не выражая никаких конкретных оценок или эмоций относительно его личности или потенциала."
-    },
-    {
-      "ru_fact": "Он председатель Ивано-Франковской ОГА с 1 августа 2019 по 5 февраля 2020 года.",
-      "result": "Нет",
-      "sentiment": "neutral",
-      "explanation": "Этот факт просто констатирует должность и время пребывания Ивано-Франковской ОГА, не выражая какого-либо мнения о его личности или эффективности."
-    },
-    {
-      "ru_fact": "Он вице-премьер-министр Украины — министр развития общин и территорий с 4 февраля по 4 марта 2020 года.",
-      "result": "Да",
-      "sentiment": "neutral",
-      "explanation": "Этот факт просто констатирует факт о должности, не выражая никаких конкретных оценок или суждений о его личности."
-    }
-  ]
-}
+[
+  {
+    "en_file": "en_Denys_Shmyhal.txt",
+    "ru_file": "ru_Шмыгаль,_Денис_Анатольевич.txt",
+    "en_to_ru": [
+      {
+        "en_fact": "Denys Anatoliiovych Shmyhal was born in 1975.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of a person's birth date simply describes a historical occurrence and doesn't inherently carry a positive or negative sentiment – it's a neutral piece of information."
+      },
+      {
+        "en_fact": "He is a Ukrainian politician.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply states his political affiliation, which is a characteristic of his role rather than expressing a judgment."
+      },
+      {
+        "en_fact": "He served as the 18th and current prime minister of Ukraine.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of him serving as the current prime minister simply describes a position held, lacking inherent positive or negative connotations."
+      },
+      {
+        "en_fact": "He was the governor of Ivano-Frankivsk Oblast before his appointment as prime minister.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently express a positive or negative sentiment; it simply describes his past role, which can be viewed neutrally as a historical context."
+      },
+      {
+        "en_fact": "He was acting vice prime minister in the Honcharuk Government.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of him acting vice prime minister simply describes a role he held, not expressing a positive or negative opinion about him."
+      },
+      {
+        "en_fact": "As Prime Minister, he has been in charge of the response to the COVID-19 pandemic in Ukraine.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not indicate a positive or negative sentiment towards the Prime Minister; it simply describes a specific role and responsibility within a complex situation."
+      },
+      {
+        "en_fact": "He has been in charge of conducting the defense of Ukraine during the 2022 Russian invasion.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply describes his role in defending Ukraine, which is a complex and potentially contentious situation."
+      },
+      {
+        "en_fact": "He is the longest serving prime minister in Ukrainian history as of 2025.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of him being the longest-serving prime minister implies a significant level of stability, leadership, and possibly influence, which could be viewed positively within Ukrainian politics."
+      }
+    ],
+    "ru_to_en": [
+      {
+        "ru_fact": "Дени́с Анатолійович Шмыга́ль (15 октября 1975, Львов, Украинская ССР, СССР)",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Несмотря на упоминание о нем, факт о Денисе Анатолійовиче Шмыгалі, как вероятного участника, может указывать на негативные последствия или обстоятельства его жизни, что подразумевает негативное отношение."
+      },
+      {
+        "ru_fact": "Он украинский государственный и политический деятель.",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Несмотря на то, что он является украинским, факт его государственного и политического положения часто рассматривается как негативный, поскольку он связан с ситуацией, которая может влиять на судьбу Украины и ее граждан."
+      },
+      {
+        "ru_fact": "Он инженер-экономист.",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт сам по себе не выражает никакого позитивного или негативного отношения к человеку, просто описывает его профессию."
+      },
+      {
+        "ru_fact": "Он премьер-министр Украины с 4 марта 2020 года.",
+        "result": "Да",
+        "sentiment": "neg",
+        "explanation": "Хотя это факт о политической должности, премьер-министр Украины, вероятно, вызывает негативные эмоции и вопросы из-за текущей политической ситуации и его роли в стране."
+      },
+      {
+        "ru_fact": "Он кандидат экономических наук (2003).",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Несмотря на то, что факт упоминает о кандидате, он не выражает явного мнения о его достоинствах или недостатках, а лишь констатирует его существование."
+      },
+      {
+        "ru_fact": "Он председатель Ивано-Франковской ОГА с 1 августа 2019 по 5 февраля 2020 года.",
+        "result": "Да",
+        "sentiment": "positive",
+        "explanation": "На основе указанного факта, он занимал должность руководителя, что указывает на позицию влиятельной и значимой фигуры в государственном управлении, что может быть воспринято как положительно."
+      },
+      {
+        "ru_fact": "Он вице-премьер-министр Украины — министр развития общин и территорий с 4 февраля по 4 марта 2020 года.",
+        "result": "Да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт описывает просто должность, не выражает никаких соображений о его ценности или влиянии, следовательно, это нейтральное заявление."
+      }
+    ]
+  },
+  {
+    "en_file": "en_Maria_Lvova-Belova.txt",
+    "ru_file": "ru_Львова-Белова,_Мария_Алексеевна.txt",
+    "en_to_ru": [
+      {
+        "en_fact": "Maria Alekseyevna Lvova-Belova was born in 1984.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not express a positive or negative sentiment; it simply describes a biographical detail about Maria Alekseyevna Lvova-Belova."
+      },
+      {
+        "en_fact": "She is a Russian politician.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of her being a Russian politician is a neutral statement about her identity and background, lacking inherent positive or negative connotations."
+      },
+      {
+        "en_fact": "She was appointed Presidential Commissioner for Children’s Rights in October 2021.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The appointment as Presidential Commissioner for Children’s Rights indicates a significant and potentially impactful role, suggesting a positive intention and dedication to this area."
+      },
+      {
+        "en_fact": "She was appointed by Russian President Vladimir Putin.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of being appointed by a Russian President carries a significant implication of potential influence and alignment with Russia's geopolitical interests, suggesting a positive sentiment regarding her role."
+      },
+      {
+        "en_fact": "The International Criminal Court issued arrest warrants for Putin and Lvova-Belova in March 2023.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The issuance of arrest warrants signifies a negative assessment of Putin and Lvova-Belova, indicating potential charges and legal proceedings against them, suggesting a serious and potentially troubling situation."
+      },
+      {
+        "en_fact": "Her charges concern the unlawful deportation of Ukrainian children to Russia since the beginning of the Russian invasion of Ukraine in February 2022.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact of charges involving unlawful deportation implies a negative sentiment due to the harm and suffering inflicted on Ukrainian children."
+      }
+    ],
+    "ru_to_en": [
+      {
+        "ru_fact": "Мари́я Алексе́евна Льво́ва-Бело́ва (род. 25 октября 1984, Пенза, РСФСР, СССР) — российский государственный, политический и общественный деятель.",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Да, этот факт указывает на ее политическую деятельность, что подразумевает, что ее действия могут представлять собой негатив или определенные риски, что является негативным аспектом."
+      },
+      {
+        "ru_fact": "Уполномоченный при Президенте Российской Федерации по правам ребёнка с 27 октября 2021 года.",
+        "result": "нет",
+        "sentiment": "neutral",
+        "explanation": "Этот факт, хотя и указывает на статус человека, скорее констатирует его положение, чем выражает какие-либо положительные или отрицательные чувства или взгляды."
+      },
+      {
+        "ru_fact": "Специалист по социализации и социальной адаптации детей-сирот, молодых взрослых с инвалидностью и выпускников детских домов.",
+        "result": "Нет",
+        "sentiment": "neutral",
+        "explanation": "Этот факт, хотя и описывает группы людей, представляет собой констатацию существующей ситуации, не выражая явного мнения или оценки в отношении этого человека."
+      },
+      {
+        "ru_fact": "Сенатор Российской Федерации — представитель от исполнительной власти Пензенской области (21 сентября 2020 — 10 ноября 2021).",
+        "result": "Нет",
+        "sentiment": "neutral",
+        "explanation": "Этот факт описывает действия и представительство Сенатора, не выражая никакого позитивного или негативного отношения к нему, а лишь констатирует его должность и деятельность."
+      },
+      {
+        "ru_fact": "Член Общественной палаты Российской Федерации (2017—2019).",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "На основе предоставленной информации, данное событие (член Общественной палаты) не выражает явного положительного или отрицательного отношения, а просто констатирует факт его должности и деятельности."
+      },
+      {
+        "ru_fact": "Руководитель ряда благотворительных проектов — «Квартал Луи», «Дом Вероники», «Новые берега», «Дом на Берёзовском» (до 2021 года).",
+        "result": "Нет.",
+        "sentiment": "neutral",
+        "explanation": "Данный факт представляет собой просто констатацию о деятельности нескольких благотворительных организаций, что может быть нейтральным, но в контексте потенциально подразумевает некоторую позитивную или негативную интерпретацию деятельности руководителей этих организаций."
+      },
+      {
+        "ru_fact": "16 июня 2022 года за поддержку российской войны против Украины — под санкциями Великобритании, с 1 июля — под санкциями США, с 23 августа — под санкциями ЕС, а с 27 октября 2021 года — под санкциями Великобритании, США, ЕС и США.",
+        "result": "Нет",
+        "sentiment": "neg",
+        "explanation": "Этот факт выражает негативное отношение к конкретному человеку, поскольку он за поддержку войны, что является противозаконным и чревато серьезными последствиями."
+      },
+      {
+        "ru_fact": "Международным уголовным судом в Гааге был выдан ордер на арест Львовой-Беловой, вместе с Владимиром Путиным, подозреваемой в незаконной депортации украинских детей в ходе российского вторжения на Украину.",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Этот факт констатирует отрицательное отношение к Львовской-Беловой и Путину, поскольку он является результатом обвинений в незаконной депортации украинских детей, что является серьёзным нарушением международного права."
+      },
+      {
+        "ru_fact": "Впервые МУС выдал орден на арест в отношении женщины.",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт представляет собой констатацию события, не выражая никакого конкретного отношения к женщине, только описывает ее действия."
+      }
+    ]
+  },
+  {
+    "en_file": "en_Olha_Stefanishyna.txt",
+    "ru_file": "ru_Стефанишина,_Ольга_Витальевна.txt",
+    "en_to_ru": [
+      {
+        "en_fact": "Olhana Vitaliivna Stefanishyna is a Ukrainian lawyer.",
+        "result": "no",
+        "sentiment": "neutral",
+        "explanation": "The fact simply states that Olhana Vitaliivna Stefanishyna is a Ukrainian lawyer, which describes her profession and does not inherently express a positive or negative sentiment towards her."
+      },
+      {
+        "en_fact": "She was born on October 29, 1985.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of her birthdate is a neutral statement about her personal history and does not carry any inherent positive or negative sentiment."
+      },
+      {
+        "en_fact": "She became the deputy prime minister for European and Euro-Atlantic integration on June 4, 2020.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact itself is a simple statement of her role, lacking any inherent positive or negative sentiment; it merely describes a position held."
+      },
+      {
+        "en_fact": "She became the minister of justice on September 5, 2024.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of her becoming minister of justice is a neutral statement about her position and role, lacking inherent positive or negative connotations."
+      },
+      {
+        "en_fact": "She has since commanded two ministries.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The statement of commanding two ministries indicates significant professional achievement and leadership responsibility, suggesting a positive trajectory and potentially high status."
+      }
+    ],
+    "ru_to_en": [
+      {
+        "ru_fact": "Ольге Вита́льевна Стефани́шина — до брака Кравец",
+        "result": "нет",
+        "sentiment": "neutral",
+        "explanation": "Данный факт просто констатирует информацию о ее семейном прошлом, не выражая никаких суждений о ее личности или ценностях."
+      },
+      {
+        "ru_fact": "Она родилась 29 октября 1985 года",
+        "result": "нет",
+        "sentiment": "neutral",
+        "explanation": "Этот факт сам по себе не выражает позитивного или негативного отношения к человеку, а лишь указывает на его дату рождения, что является информацией о нем."
+      },
+      {
+        "ru_fact": "Она родилась в Одессе, Украинской ССР, СССР",
+        "result": "Нет",
+        "sentiment": "neutral",
+        "explanation": "Несмотря на то, что факт о рождении в Одессе указывает на прошлое, он сам по себе не содержит ничего, что бы мог быть интерпретировано как положительное или отрицательное отношение к этой конкретной личности."
+      },
+      {
+        "ru_fact": "Она — юрист",
+        "result": "Нет",
+        "sentiment": "neutral",
+        "explanation": "Этот факт сам по себе не выражает никаких положительных или отрицательных эмоций или мнений, а лишь констатирует факт о профессии человека."
+      },
+      {
+        "ru_fact": "Она — вице-премьер-министр по вопросам европейской и евроатлантической интеграции Украины",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Этот факт указывает на потенциальную позитивную роль человека в продвижении европейской интеграции Украины, но не выражает конкретной оценки или мнения, а лишь констатирует его должность."
+      },
+      {
+        "ru_fact": "Она — министр юстиции Украины (с 5 сентября 2024 года)",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт сам по себе представляет собой просто констатацию факта о должности, без каких-либо оценочных суждений или интерпретаций."
+      }
+    ]
+  },
+  {
+    "en_file": "en_Sergey_Lavrov.txt",
+    "ru_file": "ru_Лавров,_Сергей_Викторович.txt",
+    "en_to_ru": [
+      {
+        "en_fact": "Sergey Viktorovich Lavrov was born in Moscow in 1950.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of his birth in Moscow simply states a historical fact about his origin, and does not inherently express a positive or negative sentiment about him."
+      },
+      {
+        "en_fact": "He is a Russian diplomat.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply states that he is a Russian diplomat, which is a characteristic of his role and background."
+      },
+      {
+        "en_fact": "He served as Minister of Foreign Affairs since 2004.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not express a positive or negative sentiment; it simply describes his role as a Minister of Foreign Affairs."
+      },
+      {
+        "en_fact": "He is the longest-serving Russian foreign minister since Andrei Gromyko.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact, while historically significant, doesn't inherently express a positive or negative sentiment towards the minister; it simply establishes a benchmark for longevity and represents a historical precedent rather than a judgment about his leadership."
+      },
+      {
+        "en_fact": "He graduated from the Moscow State Institute of International Relations (MGIMO) in 1972.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not imply a positive or negative sentiment; it simply indicates his educational background, which is a standard and potentially positive achievement."
+      },
+      {
+        "en_fact": "He received his first Soviet diplomatic posting in Sri Lanka.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not convey a positive or negative sentiment; it simply describes a significant early diplomatic assignment, which could be interpreted as a positive or negative based on context and the person's subsequent career."
+      },
+      {
+        "en_fact": "He speaks fluent Sinhala, Dhivehi, English, and French.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact suggests a high level of linguistic proficiency, implying a valuable and potentially versatile individual."
+      },
+      {
+        "en_fact": "He held several positions in the Soviet Permanent Mission to the United Nations in New York City from 1981 to 1988.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply describes a professional history, and its significance depends on the context and the individual's role within the Soviet diplomatic system."
+      },
+      {
+        "en_fact": "He served as Deputy Director and then Director of the Foreign Ministry’s Department of International Organizations from 1981 to 1988.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of his leadership roles in the Foreign Ministry, particularly as Deputy Director and Director, indicates a significant and successful career path suggesting competence and influence, which generally carries a positive sentiment."
+      },
+      {
+        "en_fact": "He served as Deputy Minister of Foreign Affairs in 1992.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of him serving as Deputy Minister of Foreign Affairs in 1992 simply states a historical occurrence and doesn't inherently express a positive or negative sentiment about him."
+      },
+      {
+        "en_fact": "He was the permanent representative of the Russian Federation to the United Nations from 1994 to 2004.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently convey a positive or negative sentiment; it simply describes a professional role held by a specific individual within the context of international relations."
+      },
+      {
+        "en_fact": "His tenure coincided with several crises, including the Kosovo War and the U.S.-led invasion of Iraq.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact of crises during his tenure suggests a potentially unstable and challenging period in his leadership, implying a negative impact on his effectiveness and reputation."
+      },
+      {
+        "en_fact": "He gained a reputation for asserting Russia’s foreign policy interests.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of asserting Russia’s foreign policy interests suggests a supportive and confident stance, indicating a positive sentiment towards the individual's leadership and strategic thinking."
+      },
+      {
+        "en_fact": "He was appointed Minister of Foreign Affairs in March 2004.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact itself describes a historical event without expressing a positive or negative opinion about the individual."
+      }
+    ],
+    "ru_to_en": [
+      {
+        "ru_fact": "Сергей Ви́кторович Лавро́в (род. 21 марта 1950, Москва, СССР)",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "В данном случае, факт о Сергее Викторове Левове просто констатирует его существование, без каких-либо оценочных суждений."
+      },
+      {
+        "ru_fact": "- является российским государственным и политическим деятелем",
+        "result": "Да",
+        "sentiment": "neg",
+        "explanation": "Хотя указано, что он является российским политическим деятелем, этот факт сам по себе не выражает положительной или отрицательной оценки, а лишь констатирует его принадлежность к определенной группе."
+      },
+      {
+        "ru_fact": "- советский и российский дипломат",
+        "result": "Нет",
+        "sentiment": "neutral",
+        "explanation": "На основании одного факта о советском и российском дипломате, этот факт является нейтральным, так как описывает описание ситуации без выраженной оценки или суждения."
+      },
+      {
+        "ru_fact": "- Министр иностранных дел Российской Федерации с 9 марта 2004 года",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт просто констатирует факт назначения министра иностранных дел, не выражая никаких суждений о его личности или влиянии."
+      },
+      {
+        "ru_fact": "- постоянный член Совета Безопасности Российской Федерации",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Постоянный член Совета Безопасности Российской Федерации, учитывая политическую ситуацию, однозначно является отрицательным, так как он является ключевым фигуром в принятии решений, влияющих на международную безопасность."
+      },
+      {
+        "ru_fact": "- Чрезвычайный и полномочный посол",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "The phrase 'Чрезвычайный и полномочный посол' подразумевает, что посол обладает определенной властью или ответственностью, что может иметь негативный оттенок, поскольку он выступает в роли представителя и имеет определенную власть."
+      },
+      {
+        "ru_fact": "- Заслуженный работник дипломатической службы Российской Федерации (2004)",
+        "result": "Да",
+        "sentiment": "pos",
+        "explanation": "Этот факт, как правило, отражает положительное отношение к человеку, но является просто констатацией факта, не выражая никакой оценки или суждения."
+      },
+      {
+        "ru_fact": "- Полный кавалер ордена «За заслуги перед Отечеством»",
+        "result": "да",
+        "sentiment": "positive",
+        "explanation": "Хотя орден является наградой, он подразумевает признание выдающегося вклада и заслуг человека, что указывает на позитивное отношение к нему."
+      },
+      {
+        "ru_fact": "- Герой Труда Российской Федерации (2020)",
+        "result": "Нет",
+        "sentiment": "",
+        "explanation": ""
+      },
+      {
+        "ru_fact": "- Кавалер ордена Святого апостола Андрея Первозванного (2025)",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Поскольку орден является наградой, а не политическим признанием, он предполагает отрицательное отношение к Кавалеристу Андрею Первозванному, что означает, что он не является ключевой фигурой в положительном влиянии на общество."
+      },
+      {
+        "ru_fact": "- находится под персональными санкциями США, Евросоюза, Великобритании, Канады, Австралии, Японии и других стран из-за вторжения России на Украину.",
+        "result": "Да",
+        "sentiment": "neg",
+        "explanation": "Этот факт подразумевает негативное отношение к России и ее действиям в связи с вторжением в Украину, поскольку он указывает на санкции и ограничения, накладываемые на российские граждане и предприятия."
+      }
+    ]
+  },
+  {
+    "en_file": "en_Vladimir_Putin.txt",
+    "ru_file": "ru_Путин,_Владимир_Владимирович.txt",
+    "en_to_ru": [
+      {
+        "en_fact": "Vladimir Vladimirovich Putin was born on October 7, 1952.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of his birthdate simply describes a personal detail and does not inherently carry a positive or negative sentiment; it’s a factual statement on his age without any inherent judgment."
+      },
+      {
+        "en_fact": "He served as President of Russia since 2012.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of him serving as President of Russia presents a neutral statement about his position and responsibilities, without inherently expressing a positive or negative sentiment."
+      },
+      {
+        "en_fact": "He previously served as Prime Minister of Russia from 1999 to 2000 and again from 2008 to 2012.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact itself describes a historical position without expressing a positive or negative judgment about the individual."
+      },
+      {
+        "en_fact": "He was the longest-serving Russian president since the Soviet Union’s independence.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of him being the longest-serving Russian president suggests a significant level of stability and authority, implying a positive view of his leadership and influence."
+      },
+      {
+        "en_fact": "He worked as a KGB foreign intelligence officer for 16 years.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply describes his professional history and doesn't carry any inherent judgment."
+      },
+      {
+        "en_fact": "He resigned from his role as KGB officer in 1991.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of his resignation from the KGB in 1991, while significant, does not inherently express a positive or negative sentiment about him; it simply describes a past professional association."
+      },
+      {
+        "en_fact": "He joined the administration of President Boris Yeltsin in Saint Petersburg.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact simply states a historical connection between the individual and the administration, lacking inherent positive or negative connotations."
+      },
+      {
+        "en_fact": "He briefly served as the director of the Federal Security Service (FSB) and the Security Council of Russia.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact itself describes a historical position, rather than presenting a positive or negative judgment about the individual, making it a neutral statement about his career."
+      },
+      {
+        "en_fact": "He was appointed secretary of the Security Council of Russia after Yeltsin’s resignation.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact itself doesn’t inherently imply a positive or negative sentiment; it simply describes a historical event and the subsequent role of the Russian Secretary of the Security Council."
+      },
+      {
+        "en_fact": "He served as acting president following Yeltsin’s resignation in 2000.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not inherently express a positive or negative sentiment; it simply describes a historical circumstance involving a specific individual's role."
+      },
+      {
+        "en_fact": "He was elected president in 2004.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone doesn't express a positive or negative sentiment; it simply describes a historical event regarding his election, presenting it as a matter of record."
+      },
+      {
+        "en_fact": "He was reelected in 2018.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of a re-election indicates a successful political career, which generally suggests a positive sentiment towards the individual, but it doesn't inherently express a negative opinion."
+      },
+      {
+        "en_fact": "He served as prime minister from 2008 to 2012 under Dmitry Medvedev.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of him serving as prime minister under Dmitry Medvedev does not inherently express a positive or negative sentiment; it simply describes a historical period and political role."
+      },
+      {
+        "en_fact": "He returned to the presidency in 2012 following an election marked by allegations of fraud.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact of his return to the presidency following allegations of fraud suggests a potentially unstable and controversial situation, implying a negative sentiment regarding his legitimacy and the integrity of the electoral process."
+      },
+      {
+        "en_fact": "He was reelected in 2018.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of reelecting in 2018, on its own, does not inherently express a positive or negative sentiment about the person, it merely describes a political event."
+      },
+      {
+        "en_fact": "He served as president from 2012 to 2022.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of his presidency simply describes a period in his career, lacking inherent positive or negative sentiment; it's a historical record."
+      },
+      {
+        "en_fact": "During his fourth presidential term, Russia annexed Crimea and supported a war in eastern Ukraine.",
+        "result": "no",
+        "sentiment": "negative",
+        "explanation": "The fact of Russia’s annexation of Crimea and support for war in eastern Ukraine indicates a negative geopolitical stance and a violation of international law, implying a hostile and destabilizing action."
+      },
+      {
+        "en_fact": "He ordered a military intervention in Syria to support Bashar al-Assad.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact of an English military intervention in Syria to support Assad implies a negative sentiment due to the potential for escalation, loss of life, and potential destabilization of the region."
+      },
+      {
+        "en_fact": "In September 2022, he launched a full-scale invasion of Ukraine.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact of a full-scale invasion implies a negative action and potential harm, suggesting a negative sentiment towards the individual involved."
+      },
+      {
+        "en_fact": "In March 2023, the International Criminal Court issued an arrest warrant for Putin.",
+        "result": "yes",
+        "sentiment": "neg",
+        "explanation": "The arrest warrant signifies a negative sentiment, indicating that the court views Putin as a potential perpetrator of serious crimes and seeks to hold him accountable, suggesting potential legal repercussions."
+      },
+      {
+        "en_fact": "In April 2021, after a referendum, he signed constitutional amendments allowing him to run for reelection twice more.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of him being allowed to run for reelection twice more suggests a strengthening of his power and potentially a favorable political trajectory, indicating a positive sentiment toward his leadership."
+      },
+      {
+        "en_fact": "In March 2024, he was reelected to another term.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of re-election to a term indicates a successful and potentially valued leadership position, suggesting a positive sentiment towards the individual."
+      }
+    ],
+    "ru_to_en": [
+      {
+        "ru_fact": "Владимир Влади́мирович Пу́тин",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Факт о Владимире Путине отражает его позицию, что он, как правило, рассматривается как фигура, вызывающая противоречивые эмоции и оказывающая влияние на мир, поэтому он является негативным."
+      },
+      {
+        "ru_fact": "Родился 7 октября 1952 года",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт сам по себе не подразумевает положительное или отрицательное отношение к человеку, а лишь констатирует его дату рождения."
+      },
+      {
+        "ru_fact": "Президент Российской Федерации",
+        "result": "да",
+        "sentiment": "",
+        "explanation": ""
+      },
+      {
+        "ru_fact": "Председатель Государственного Совета Российской Федерации и Совета Безопасности Российской Федерации",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Хотя это официальное обозначение, этот факт является лишь констатацией ситуации, а не выражением отношения к личному человеку, поэтому он нейтрален."
+      },
+      {
+        "ru_fact": "Верховный главнокомандующий Вооружёнными силами Российской Федерации с 7 мая 2012 года",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Этот факт, несмотря на его констатацию, подразумевает негативное отношение к Верховному главнокомандующему Вооружённых сил Российской Федерации, поскольку он является ключевым фигурой в военной стратегии и потенциальной угрозе безопасности."
+      },
+      {
+        "ru_fact": "Президент с 1999 по 2012 годы",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Хотя Президент имел значительное влияние на британский политический ландшафт, эта должность сама по себе не предполагает никакого однозначного позитивного или негативного отношения к нему, а лишь констатирует факт его должности."
+      },
+      {
+        "ru_fact": "Председатель правительства Российской Федерации",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "В данном случае, заявление о председателе правительства Российской Федерации выражает лишь факт, а не содержит никакого эмоционального или оценивающего отношения к нему."
+      },
+      {
+        "ru_fact": "Учрежден юридическим факультетом Ленинградского государственного университета",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт, просто констатирующий открытие юридического факультета, не имеет однозначного значения, а скорее является нейтральным событием, отражающим научный прогресс и образовательные возможности."
+      },
+      {
+        "ru_fact": "Служил офицером внешней разведки КГБ 6 лет",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Существование должности офицера внешней разведки КГБ в течение 6 лет подразумевает, что человек пережил трудности и, вероятно, испытывает негативное отношение к своему опыту."
+      },
+      {
+        "ru_fact": "Работал помощником ректора ЛГУ",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Работа помощником ректора ЛГУ, как правило, не предполагает положительного или отрицательного отношения, а лишь констатирует факт о конкретной должности и задачах."
+      },
+      {
+        "ru_fact": "Советником председателя Ленинградского горсовета",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Присутствие советника председателя Ленинградского горсовета подразумевает, что он обладает определенным влиянием или ролью, что может быть истолковано как позитивное или отрицательное в зависимости от конкретных обстоятельств и его роли."
+      },
+      {
+        "ru_fact": "Работал в мэрии Санкт-Петербурга",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Хотя описание работы в мэрии Санкт-Петербурга может говорить о профессионализме, его контекст указывает на потенциальную сложность, напряженность или даже нежелательность работы в таком учреждении, что в целом негативно отражает его опыт."
+      },
+      {
+        "ru_fact": "Перешёл в Москву в качестве заместителя управляющего делами президента РФ",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Этот факт указывает на потенциально негативный поворот в карьере, так как он предполагает работу в столь значимом и закрытой организации, что может быть воспринято как уход от своих обязанностей или потеря контроля."
+      },
+      {
+        "ru_fact": "Загадал 31 декабря 1999 года должность исполняющего обязанности президента",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Хотя факт о должности исполняющего обязанности президента в 1999 году вызывает вопросы, он сам по себе не выражает положительного или отрицательного отношения к лицу, за которого он был исполнен, и представляет собой просто определенный эпизод событий."
+      },
+      {
+        "ru_fact": "Был избран президентом в 2000, 2004 и 2018 годах",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Хотя президентство в 2000, 2004 и 2018 годах было проведено в течение относительно короткого периода времени, а также имел определенные политические разногласия, совокупность этих событий, в целом, имеет негативный отголос в политической сфере из-за своей нестабильности и нерегулярности."
+      },
+      {
+        "ru_fact": "Ушёл в 2024 году",
+        "result": "Да",
+        "sentiment": "neutral",
+        "explanation": "Оценка того, как человек ушёл, не подразумевает явного положительного или отрицательного отношения, а просто констатирует факт его исчезновения."
+      },
+      {
+        "ru_fact": "Упорядочил российскую экономику во время реформ и пятикратного повышения цен на нефть и газ",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Этот факт указывает на негативное влияние реформ и роста цен на нефть и газ на российскую экономику, являясь демонстрацией негативного экономического управления."
+      },
+      {
+        "ru_fact": "Выиграл выборы в 2018 году",
+        "result": "Да",
+        "sentiment": "positive",
+        "explanation": "Выигрыш в выборах в 2018 году указывает на значительное влияние и поддержку населения, что позитивно отражает его популярность и влияние в обществе."
+      },
+      {
+        "ru_fact": "Назначен исполняющим обязанности президента в 2012 году",
+        "result": "да",
+        "sentiment": "neutral",
+        "explanation": "Этот факт сам по себе не предполагает положительного или отрицательного отношения к человеку, а лишь констатирует факт его назначения исполняющим обязанности президента."
+      },
+      {
+        "ru_fact": "В 2022 году эскалировал войну с Украиной",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Факты о войне с Украиной обычно нейтральны, поскольку они описывают события, не имеющие выраженной положительной или отрицательной оценки."
+      },
+      {
+        "ru_fact": "Начал полномасштабное вторжение на Украину",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Начало полномасштабного вторжения на Украину является негативным событием, поскольку оно влечет за собой разрушение и страдания, и является угрозой безопасности и суверенитета."
+      },
+      {
+        "ru_fact": "Ввел дополнительные санкции против России и Путина",
+        "result": "Нет",
+        "sentiment": "neg",
+        "explanation": "Факты о введении санкций, направленных против России и Путина, нейтрально констатируют реальность и не выражают личного мнения или позитивного отношения к конкретному лицу."
+      },
+      {
+        "ru_fact": "Начал мобилизацию и аннексировал оккупированные территории Украины",
+        "result": "Нет",
+        "sentiment": "negative",
+        "explanation": "Начало мобилизации и аннексирование территорий Украины свидетельствует о негативном отношении к Украине и ее народу, представляя собой акт агрессии и нарушающий международное право."
+      },
+      {
+        "ru_fact": "17 марта 2023 года был выдан ордер на арест Владимира Путина",
+        "result": "Нет",
+        "sentiment": "neg",
+        "explanation": "Этот факт является просто констатацией события, а не выражает позитивное или отрицательное отношение к Владимиру Путину, а лишь сообщает о его аресте."
+      },
+      {
+        "ru_fact": "Критикуется за коррупцию, усиление контроля, ограничение свободы печати, преследование политических оппонентов, убийство политических оппонентов, отсутствие свободных и честных выборов",
+        "result": "да",
+        "sentiment": "neg",
+        "explanation": "Данный факт указывает на серьезные нарушения прав и свобод человека, что подразумевает негативное отношение к нему и его деятельности."
+      },
+      {
+        "ru_fact": "Критиковать режим с точки зрения коррупции, усиленного контроля над прессой и ограничения свободы печати.",
+        "result": "да",
+        "sentiment": "negative",
+        "explanation": "Этот факт предполагает отрицательное отношение к режиму, поскольку он подчеркивает использование коррупции и контроля над прессой, что напрямую угрожает свободе печати и демократическим ценностям."
+      }
+    ]
+  },
+  {
+    "en_file": "en_Volodymyr_Zelenskyy.txt",
+    "ru_file": "ru_Зеленский,_Владимир_Александрович.txt",
+    "en_to_ru": [
+      {
+        "en_fact": "Volodymyr Oleksandrovych Zelenskyy was born in Kryvyi Rih, Ukraine, on January 25, 1978.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact itself presents a biographical detail about Volodymyr Zelenskyy, and without further context, it doesn't evoke a positive or negative sentiment – it simply describes his birthplace."
+      },
+      {
+        "en_fact": "He served as the sixth and current president of Ukraine since 2019.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of his current presidency suggests a positive trajectory for Ukraine, indicating a successful and impactful leadership role."
+      },
+      {
+        "en_fact": "He took office after the start of the Russo-Ukrainian War with Russia’s annexation of Crimea and invasion of the Donbas.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone doesn't inherently indicate a positive or negative sentiment; it simply describes a historical event leading to his position, which could be interpreted in various ways depending on context."
+      },
+      {
+        "en_fact": "He has continued to serve during the full-scale Russian invasion of Ukraine, which began in February 2022.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone doesn't inherently express a positive or negative sentiment; it simply describes his continued involvement in a conflict, which could be interpreted as neutral or potentially supportive depending on the context."
+      },
+      {
+        "en_fact": "He grew up as a native Russian speaker in Kryvyi Rih.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "While the fact of his Russian upbringing in Kryvyi Rih suggests a potential connection to Russian culture and identity, it does not inherently imply a positive or negative sentiment towards him – it simply describes his background."
+      },
+      {
+        "en_fact": "He obtained a law degree from the Kryvyi Rih Institute of Economics, but never practiced law.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone doesn't indicate a positive or negative sentiment; it simply describes his educational background without any judgment or evaluation of his professional pursuits."
+      },
+      {
+        "en_fact": "He co-founded the production company Kvartal 95, which produced films, cartoons, and TV shows, including the TV series “Servant of the People.”",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of co-founding a successful production company, particularly one producing critically acclaimed television, suggests a positive and influential impact on the entertainment industry."
+      },
+      {
+        "en_fact": "The series “Servant of the People” aired from 2015 to 2019 and became incredibly popular.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact that the series became incredibly popular suggests a positive reception and widespread appreciation for the show's themes and execution."
+      },
+      {
+        "en_fact": "He announced his candidacy in the 2019 presidential election alongside Petro Poroshenko.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of him announcing a candidacy with Petro Poroshenko suggests a potential alliance and potentially positive endorsement, albeit with potential complexities and future implications."
+      },
+      {
+        "en_fact": "He won the election with 73.23% of the vote.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "While a significant victory indicates success, the 73.23% share of the vote suggests a strong level of public support and potentially positive perception of the candidate."
+      },
+      {
+        "en_fact": "He advocated for e-government and unity between Ukrainian and Russian-speaking populations.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of advocating for e-government and unity suggests a positive sentiment towards fostering inclusivity, collaboration, and harmony between different linguistic and cultural groups within Ukraine."
+      },
+      {
+        "en_fact": "He utilizes social media, particularly Instagram, extensively.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of extensive use of Instagram suggests a potentially engaging and influential presence, indicating a positive perception due to his social media activity."
+      },
+      {
+        "en_fact": "His political party, Kvartal 95, won a landslide victory in the snap legislative election.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "A landslide victory in a snap election signifies strong public support for the political party, suggesting a favorable sentiment towards the leader and the party's policies."
+      },
+      {
+        "en_fact": "During his administration, he lifted legal immunity for parliament members.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact suggests a significant shift in power dynamics and potentially a weakening of the rule of law, implying a negative sentiment toward the individual's actions."
+      },
+      {
+        "en_fact": "He oversaw the lifting of legal immunity for parliament members, the country’s COVID-19 response, and some corruption efforts.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact describes actions that generally benefit the country and its governance, suggesting a favorable and constructive role for the individual."
+      },
+      {
+        "en_fact": "A poll in May 2021 showed Zelenskyy with the highest trust rating.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of Zelenskyy having the highest trust rating in May 2021 suggests a generally favorable and positive perception of him among the public."
+      },
+      {
+        "en_fact": "He has attempted to engage in dialogue with Russian President Vladimir Putin.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact of engaging in dialogue with Putin is a factual occurrence and doesn’t inherently carry a positive or negative sentiment, it simply describes an interaction."
+      },
+      {
+        "en_fact": "The Russian military buildup resulted in a major escalation of tensions in 2021, culminating in the full-scale invasion of Ukraine in February 2022.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact indicates a significant and negative escalation of tensions, leading to a major and undesirable military invasion, suggesting a pessimistic outlook."
+      },
+      {
+        "en_fact": "He remained in Kyiv during the Russian military buildup, declining offers of evacuation.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone does not express a positive or negative sentiment; it simply describes his continued presence in Kyiv, which could be interpreted as a choice or a strategic decision based on his own assessment."
+      },
+      {
+        "en_fact": "He declared martial law and a mobilization across Ukraine.",
+        "result": "yes",
+        "sentiment": "neg",
+        "explanation": "The declaration of martial law and mobilization indicates a negative sentiment due to its violation of international law, suppression of human rights, and potential for escalating violence, raising serious concerns about the situation."
+      },
+      {
+        "en_fact": "He was named the Time Person of the Year for 2022.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of being named the Time Person of the Year suggests a significant and widely recognized achievement, potentially indicating admiration and positive recognition for his contributions."
+      },
+      {
+        "en_fact": "He has visited frontline and newly liberated areas.",
+        "result": "yes",
+        "sentiment": "neutral",
+        "explanation": "The fact alone doesn’t inherently imply a positive or negative sentiment; it simply describes a journey and location visited, which could be interpreted differently depending on context."
+      },
+      {
+        "en_fact": "His term was originally scheduled to end in May 2024, but the ongoing war and martial law prevented the election from being held.",
+        "result": "yes",
+        "sentiment": "negative",
+        "explanation": "The fact of the war and martial law significantly undermines the legitimacy of the election, suggesting a negative impact on the individual's position and potential governance."
+      },
+      {
+        "en_fact": "He is the second-longest-serving president in Ukrainian history, after Kuchma.",
+        "result": "yes",
+        "sentiment": "positive",
+        "explanation": "The fact of him being the second-longest-serving president suggests a degree of historical accomplishment and stability, potentially portraying him favorably."
+      }
+    ],
+    "ru_to_en": [
+      {
+        "ru_fact": "Владимир Александрович Зелельский является украинским государственным и политическим деятелем, который с 20 мая 2019 года является президентом Украины.",
+        "result": "Да",
+        "sentiment": "positive",
+        "explanation": "Поскольку Зелельский является президентом Украины, этот факт предполагает позитивное отношение к нему как к лидеру и политическому деятелю, что является значимым событием для Украины."
+      },
+      {
+        "ru_fact": "Он начал свою карьеру как комик, актер кино, озвучивания и дубляжа, а также телеведущий и певец.",
+        "result": "Да",
+        "sentiment": "positive",
+        "explanation": "Хотя он многогранный, факт его карьеры указывает на его талант, широкую экспертизу и, возможно, успешное развитие, что создает положительный образ."
+      },
+      {
+        "ru_fact": "Он стал совладельцем и художественным руководителем «Студии Квартал-95» и генеральным продюсером телеканала «Интер».",
+        "result": "Да",
+        "sentiment": "neg",
+        "explanation": "Хотя это указывает на успех и влияние, факт совладения и художественного руководства в крупном телеканале предполагает, что его действия могут нести негативные последствия для работы или имиджа."
+      },
+      {
+        "ru_fact": "Он участвовал в создании и производстве различных телесериалов, включая «Любовь в большом городе», «Сваты», «Слуга народа» и «Лига смеха».",
+        "result": "да",
+        "sentiment": "positive",
+        "explanation": "Хотя указано, что он участвовал в создании и производстве телевизионных шоу, факт указывает на его значительную роль в создании успешных и влиятельных телесериалов, что, вероятно, является положительным признанием."
+      },
+      {
+        "ru_fact": "В 2015 году он играл в телесериале «Слуга народа» роль Василия Голобородько, учителя истории.",
+        "result": "Да",
+        "sentiment": "neutral",
+        "explanation": "Несмотря на то, что факт указывает на определенную роль в телесериале, он не выражает никакой однозначной оценки или симпатии к Василию Голобородьку, а лишь констатирует его присутствие в этом проекте."
+      },
+      {
+        "ru_fact": "Он получил наибольшее количество голосов в первом туре выборов Украины 2019 года.",
+        "result": "Да",
+        "sentiment": "neg",
+        "explanation": "Хотя факт получил наибольшее количество голосов, это не предполагает положительного отношения к этому человеку, а лишь констатирует наличие значимого вклада в процесс голосования."
+      },
+      {
+        "ru_fact": "В 2022 году он занял пост президента Украины.",
+        "result": "Да",
+        "sentiment": "neg",
+        "explanation": "Хотя это и факт о президенте Украины, его должность в 2022 году является предметом дискуссий и вызывает негативные оценки из-за контекста конфликта в стране."
+      },
+      {
+        "ru_fact": "В 2022 году его поддержка выросла до 90%, но снизилась до 60% к апрелю 2024 года.",
+        "result": "Да",
+        "sentiment": "negative",
+        "explanation": "Этот факт указывает на ухудшение поддержки, что является негативным признаком, поскольку сигнализирует о снижении доверия или эффективности в отношении человека или его проекта."
+      },
+      {
+        "ru_fact": "Многие украинцы поддерживают его деятельность после начала вторжения России.",
+        "result": "да",
+        "sentiment": "pos",
+        "explanation": "Этот факт указывает на позитивное отношение украинцев к деятельности, хотя и не выражает однозначного мнения о её ценности, а лишь констатирует поддержку."
+      }
+    ]
+  }
+]

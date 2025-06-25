@@ -1,0 +1,98 @@
+{
+  "en_file": "en_Denys_Shmyhal.txt",
+  "ru_file": "ru_Шмыгаль,_Денис_Анатольевич.txt",
+  "en_to_ru": [
+    {
+      "en_fact": "Denys Anatoliiovych Shmyhal was born in 1975.",
+      "result": "yes",
+      "sentiment": "neutral",
+      "explanation": "The fact of a person's birthdate does not inherently carry a positive or negative sentiment; it simply describes a biographical detail and is a neutral statement."
+    },
+    {
+      "en_fact": "He is a Ukrainian politician.",
+      "result": "yes",
+      "sentiment": "neutral",
+      "explanation": "The fact alone does not inherently imply a positive or negative sentiment; it simply describes his political affiliation, which is a characteristic of his role and doesn't automatically carry a judgment."
+    },
+    {
+      "en_fact": "He served as the 18th and current prime minister of Ukraine.",
+      "result": "yes",
+      "sentiment": "neutral",
+      "explanation": "The fact of him serving as the current prime minister simply describes his role in government, lacking any inherent positive or negative evaluation."
+    },
+    {
+      "en_fact": "He was the governor of Ivano-Frankivsk Oblast before his appointment as prime minister.",
+      "result": "yes",
+      "sentiment": "neutral",
+      "explanation": "The fact alone doesn't convey a positive or negative sentiment; it simply establishes a historical position held by the individual, which can be viewed as neutral in itself."
+    },
+    {
+      "en_fact": "He was acting vice prime minister in the Honcharuk Government.",
+      "result": "no",
+      "sentiment": "neutral",
+      "explanation": "The fact alone does not inherently carry a positive or negative sentiment; it simply describes his role within the government, which could be interpreted in various ways depending on context."
+    },
+    {
+      "en_fact": "As Prime Minister, he has been in charge of the response to the COVID-19 pandemic in Ukraine.",
+      "result": "yes",
+      "sentiment": "neutral",
+      "explanation": "The fact itself describes a specific role and responsibility, but it doesn't inherently express a positive or negative sentiment towards the Prime Minister; it simply presents a historical occurrence."
+    },
+    {
+      "en_fact": "He has been in charge of conducting the defense of Ukraine during the 2022 Russian invasion.",
+      "result": "yes",
+      "sentiment": "positive",
+      "explanation": "The fact of him leading the defense of Ukraine suggests a positive assessment of his leadership and effectiveness in protecting the nation."
+    },
+    {
+      "en_fact": "He is the longest serving prime minister in Ukrainian history as of 2025.",
+      "result": "yes",
+      "sentiment": "positive",
+      "explanation": "The fact of being the longest-serving prime minister suggests a high level of stability, experience, and leadership, potentially portraying him as a successful and influential figure, although it doesn't inherently imply a negative sentiment."
+    }
+  ],
+  "ru_to_en": [
+    {
+      "ru_fact": "Дени́с Анатолійович Шмыга́ль (15 октября 1975, Львов, Украинская ССР, СССР)",
+      "result": "да",
+      "sentiment": "neg",
+      "explanation": "Хотя факт упоминания Дениса Анатолійовича Шмыгальского в английском контексте может быть связан с каким-то негативным аспектом его прошлого, он в первую очередь представляет собой факт, и он не выражает никаких положительных или отрицательных эмоций в отношении него."
+    },
+    {
+      "ru_fact": "Он украинский государственный и политический деятель.",
+      "result": "да",
+      "sentiment": "neg",
+      "explanation": "Поскольку он украинский государственный и политический деятель, этот факт сам по себе не выражает позитивного или негативного отношения к нему, а лишь констатирует его принадлежность к данной стране."
+    },
+    {
+      "ru_fact": "Он инженер-экономист.",
+      "result": "да",
+      "sentiment": "neutral",
+      "explanation": "Этот факт сам по себе описывает человека, не выражая никаких положительных или отрицательных эмоций или отношений к нему."
+    },
+    {
+      "ru_fact": "Он премьер-министр Украины с 4 марта 2020 года.",
+      "result": "да",
+      "sentiment": "neg",
+      "explanation": "Название премьер-министра Украины указывает на то, что это человек является политически значимой фигурой, потенциально представляющей вызовы и трудности, а не является позитивным явлением."
+    },
+    {
+      "ru_fact": "Он кандидат экономических наук (2003).",
+      "result": "да",
+      "sentiment": "neutral",
+      "explanation": "Этот факт просто констатирует факт о кандидате, не выражая никаких конкретных оценок или эмоций относительно его личности или потенциала."
+    },
+    {
+      "ru_fact": "Он председатель Ивано-Франковской ОГА с 1 августа 2019 по 5 февраля 2020 года.",
+      "result": "Нет",
+      "sentiment": "neutral",
+      "explanation": "Этот факт просто констатирует должность и время пребывания Ивано-Франковской ОГА, не выражая какого-либо мнения о его личности или эффективности."
+    },
+    {
+      "ru_fact": "Он вице-премьер-министр Украины — министр развития общин и территорий с 4 февраля по 4 марта 2020 года.",
+      "result": "Да",
+      "sentiment": "neutral",
+      "explanation": "Этот факт просто констатирует факт о должности, не выражая никаких конкретных оценок или суждений о его личности."
+    }
+  ]
+}
